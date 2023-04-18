@@ -12,7 +12,7 @@ Cell type classification aims to predict .
 Install Zheng68k [here]() and put them under `datasets/ctc/`.
 
 #### Model Preparation
-Install ScBERT by following instructions [here](https://github.com/TencentAILabHealthcare/scBERT) and CellLM from here [here]() and put it under `ckpts/cell_ckpts/`.
+Install ScBERT by following instructions [here](https://github.com/TencentAILabHealthcare/scBERT) and CellLM from [here]() and put it under `ckpts/cell_ckpts/`.
 
 #### Training and Evaluation
 
