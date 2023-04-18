@@ -4,9 +4,9 @@ Drug-target interaction prediction aims to predict the binding relationships bet
 #### Feature
 
 - Supported models: DeepDTA, MGraphDTA and DeepEIK. More models will be implemented and more combinations will be tested in the future.
-- Supported datasets: 2 classification datasets (Yamanishi08's and BMKG-DTI), 2 regression datasets (Davis and KIBA).
-- Supported split: warm start; cold-drug; cold-protein; cold-cluster.
-- Supproted evaluation: ROC_AUC, PR_AUC, F1, precision and recall for classification, MSE, Pearson and Spearman coefficients, CI index, and $r_m^2$ index for regression.
+- Supported datasets: 2 classification datasets i.e. Yamanishi08's and BMKG-DTI, 2 regression datasets i.e. Davis and KIBA.
+- Supported split: warm start; cold-drug; cold-protein; cold-cluster;
+- Supproted evaluation: ROC_AUC, PR_AUC, F1, Precision and Recall for classification; MSE, Pearson and Spearman coefficient, CI index and $r_m^2$ index for regression.
 
 #### Additional Packages
 
@@ -31,15 +31,16 @@ pip install -e .
 
 #### Data Preparation
 
-Install 4 DTI datasets [here]() and put them under `datasets/dti/`. It is recommended to install BMKGv1 [here]() and put it under `assets/kg/`.
+Davis and KIBA can download from [DeepDTA](https://github.com/hkmztrk/DeepDTA/tree/master/data), Yamanishi08 and BMKG_DTI can download from [here](​https://drive.google.com/drive/folders/1AaUWLlOOua5BH7Q-bBVUBgOugDfWF3ip?usp=sharing). The 4 datasets should put under `datasets/dti/`. It is recommended to install BMKGv1 [here](​https://drive.google.com/drive/folders/1U2M3383-3dDAyLTAcXGcUagAEjlB6QgN?usp=sharing
+) and put it under `assets/kg/`.
 
-#### Model Preparation
+#### Model preparation
 
-To reproduce DeepEIK, you should install PubMedBERT (uncased) from [Hugging Face](https://huggingface.co/microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext) and put the checkpoint under `ckpts/text_ckpts/`. 
+To reproduce DeepEIK, you should install PubMedBERT (uncased) from [huggingface](https://huggingface.co/microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext) and put the checkpoint under `ckpts/text_ckpts/`. 
 
 #### Training and Evaluation
 
-You can run the Bash scripts under `scripts/dti/`:
+You can run scripts using bash under `scripts/dti/`:
 
 ```bash
 scripts/dti

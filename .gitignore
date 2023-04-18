@@ -139,7 +139,7 @@ cython_debug/
 
 # Datasets
 /datasets/
-/dair_biomed/results/
+/open_biomed/results/
 /logs/
 /ckpts
 /datasets
@@ -155,5 +155,5 @@ cython_debug/
 *.csv
 *.pt
 *.txt
-dair-biomed/
+open-biomed/
 origin-data/

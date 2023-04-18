@@ -1,9 +1,9 @@
 ##  Molecule Captioning
-Molecule captioning is a multi-modal task that aims to generate texts for a molecule that describes its functions and properties.  
+Molecule captioning is a multi-modal task that aims to generate texts for a molecule that describes its funcitons and properties.  
 
 #### Feature
 
-- Supported models: MolT5, MoMu, BioMedGPT, and GNN models, followed by a MolT5 decoder. 
+- Supported models: MolT5, MoMu, BioMedGPT and GNN models followed by a MolT5 decoder. 
 
 - Supported dataset: CheBI-20.
 
@@ -31,24 +31,24 @@ python
 
 Install CheBI-20 [here](https://github.com/blender-nlp/MolT5/tree/main/ChEBI-20_data) and put the files under `datasets/molcap/chebi-20`.  For Text2Mol evaluation, download `cids_to_smiles.pkl` from [here](https://uofi.box.com/v/MolT5-cid-to-smiles) and `test.txt` from [here](https://github.com/blender-nlp/MolT5/tree/main/evaluation/text2mol_data) and put them under `assets/molcap/text2mol_data`.
 
-#### Model Preparation
-Install [SciBERT](https://huggingface.co/allenai/scibert_scivocab_uncased) and [MolT5](https://huggingface.co/laituan245) and put them under `ckpts/text_ckpts/`. Distinguish between MolT5-smiles2caption (fine-tuned for molecule caption) and MolT5 (not fine-tuned). You can also change the value of `"model_name_or_path"` to `"allenai/scibert_scivocab_uncased"` or `"laituan245/molt5-[small/base/large]"` in the config JSON file to download the PLM when running the code.
+#### Model preparation
+Install [SciBERT](https://huggingface.co/allenai/scibert_scivocab_uncased) and [MolT5](https://huggingface.co/laituan245) and put them under `ckpts/text_ckpts/`. Distinguish between MolT5-smiles2caption (fine-tuned for molecule caption) and MolT5 (not fine-tuned). You can also change the value of `"model_name_or_path"` to `"allenai/scibert_scivocab_uncased"` or `"laituan245/molt5-[small/base/large]"` in the config json file to download the PLM when running the code.
 
 The multi-modal models are optional if you don't want to reproduce their results:
 
 - Install MoMu checkpoints following instructions [here](https://github.com/ddz16/MoMu).
-- Install BioMedGPT checkpoint [here]().
+- Install BioMedGPT checkpoint [here](https://pan.baidu.com/s/19L1sMZBkY_43nrZ9NCZTYg?pwd=jg4y#list/path=%2F) (password is jg4y).
 
-The above 2 checkpoints should be placed under `ckpts/fusion_ckpts/`.
+The above 2 checkpoints should be placed under `ckpts/fusion_ckpts/` .
 
-For Text2Mol evaluation, download the Text2Mol checkpoint `test_outputfinal_weights.320.pt`[here](https://uofi.box.com/s/es16alnhzfy1hpagf55fu48k49f8n29x) and put it under `ckpts/fusion_ckpts/text2mol/`.
+For Text2Mol evaluation, download the Text2Mol checkpoint `test_outputfinal_weights.320.pt` [here](https://uofi.box.com/s/es16alnhzfy1hpagf55fu48k49f8n29x) and put it under `ckpts/fusion_ckpts/text2mol/`.
 
 #### Training and Evaluation
 
-You can run the Bash scripts under `dair_biomed/scripts/molcap/`:
+You can run scripts using bash under `open_biomed/scripts/molcap/`:
 
 ```bash
-dair_biomed/scripts/molcap/
+open_biomed/scripts/molcap/
 ├── train.sh										# train MoMu / BioMedGPT enhanced MolT5 model
 ├── test.sh											# test MoMu / BioMedGPT enhanced MolT5 model
 └── test_molt5.sh								# test the original MolT5 model

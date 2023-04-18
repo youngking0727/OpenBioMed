@@ -3,33 +3,33 @@ Molecule-text retrieval is a multi-modal task that aims to select the most relev
 
 #### Feature
 
-- Supported models: SciBERT, KV-PLM, MoMu, BioMedGPT, and combinations of models. 
+- Supported models: SciBERT, KV-PLM, MoMu, BioMedGPT and combination of models. 
 - Supported dataset: PCdes.
 - Supproted evaluation: MRR (Mean Reversed Rank), Recall@1, Recall@5, Recall@10.
 
-*Warning*: We provide supervised learning and zero-shot evaluation, and the latter can only be applied to multi-modal models like MoMu and BioMedGPT. 
+*Warning*: we provide supervised learning and zero-shot evaluation, and the latter could only be applied to multi-modal models like MoMu and BioMedGPT. 
 
 #### Data Preparation
 
-Install PCdes [here](https://github.com/thunlp/KV-PLM/tree/master/Ret) (`align_des_filt3.txt` and `align_smiles.txt`) and put them under `datasets/mtr/`. Install `pair.txt` [here]() and put it under `datasets/mtr/momu_pretrain`. (This file is used to filter out molecules that appear in MoMu pretraining.)
+Install PCdes [here](https://github.com/thunlp/KV-PLM/tree/master/Ret) (`align_des_filt3.txt` and `align_smiles.txt`) and put them under `datasets/mtr/`. Install `pair.txt` [here](https://pan.baidu.com/s/1c1IDHiQ4df64rbgLaVFw9w) (`password is iv7a`) and put it under `datasets/mtr/momu_pretrain` (The file is used to filter out molecules appear in MoMu pretraining). 
 
-#### Model Preparation
-Install SciBERT from [Hugging Face](https://huggingface.co/allenai/scibert_scivocab_uncased) and put it under `ckpts/text_ckpts/`. You can also change the value of `"model_name_or_path"` to `"allenai/scibert_scivocab_uncased"` in the config JSON file to download the PLM when running the code.
+#### Model preparation
+Install SciBERT from [huggingface](https://huggingface.co/allenai/scibert_scivocab_uncased) and put it under `ckpts/text_ckpts/`. You can also change the value of `"model_name_or_path"` to `"allenai/scibert_scivocab_uncased"` in the config json file to download the PLM when running the code.
 
 The multi-modal models are optional if you don't want to reproduce their results:
 
 - Install MoMu checkpoints following instructions [here](https://github.com/ddz16/MoMu).
 - Install KV-PLM checkpoints following instructions [here](https://github.com/thunlp/KV-PLM). You should also install `bpe_encoding.txt` and `bpe_vocab.txt` in the repository and put them under `assets/KV-PLM` if you want to experiment with KV-PLM*.
-- Install BioMedGPT checkpoint [here]().
+- Install BioMedGPT checkpoint [here](https://pan.baidu.com/s/19L1sMZBkY_43nrZ9NCZTYg?pwd=jg4y#list/path=%2F). The password is jg4y.
 
 The above 3 checkpoints should be placed under `ckpts/fusion_ckpts/` .
 
 #### Training and Evaluation
 
-You can run the Bash scripts under `dair_biomed/scripts/mtr/`:
+You can run scripts using bash under `open_biomed/scripts/mtr/`:
 
 ```bash
-dair_biomed/scripts/mtr
+open_biomed/scripts/mtr
 ├── run.sh                      # evaluate MoMu / BioMedGPT under supervised learning or zero-shot
 ├── run_baseline.sh             # train composed models (an arbitary molecule encoder and an arbitary text encoder)
 ├── train_kvplm.sh              # train KV-PLM

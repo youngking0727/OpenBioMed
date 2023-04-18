@@ -28,7 +28,7 @@
         "drug": {
             "structure": {
                 "name": "cnn",
-                "config_path": "../dair_biomed/configs/encoders/drug/cnn.json"
+                "config_path": "configs/encoders/drug/cnn.json"
             },
             "kg": {
                 "embedding_dim": 256

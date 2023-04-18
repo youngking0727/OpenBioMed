@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name open-dair-biomed
+#SBATCH --job-name open-biomed
 #SBATCH --array 0
 #SBATCH --gres gpu:a100:1
 #SBATCH --time 12:00:00 

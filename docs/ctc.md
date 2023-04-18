@@ -1,5 +1,5 @@
 ##  Cell Type Classification
-Cell type classification aims to predict .
+Cell type classification aims to predict .  
 
 #### Feature
 
@@ -9,14 +9,14 @@ Cell type classification aims to predict .
 
 #### Data Preparation
 
-Install Zheng68k [here]() and put them under `datasets/ctc/`.
+Install Zheng68k [here](https://github.com/10XGenomics/single-cell-3prime-paper/blob/master/pbmc68k_analysis/68k_pbmc_barcodes_annotation.tsv) and put them under `datasets/ctc/`.
 
-#### Model Preparation
-Install ScBERT by following instructions [here](https://github.com/TencentAILabHealthcare/scBERT) and CellLM from [here]() and put it under `ckpts/cell_ckpts/`.
+#### Model preparation
+Install ScBERT following instructions [here](https://github.com/TencentAILabHealthcare/scBERT) and CellLM from [here]( https://pan.baidu.com/s/19L1sMZBkY_43nrZ9NCZTYg?pwd=jg4y) (`password is jg4y`) and put them under `ckpts/cell_ckpts/`. 
 
 #### Training and Evaluation
 
-You can run the Bash script `dair_biomed/scripts/ctc/train.sh`:
+You can run scripts using bash script `open_biomed/scripts/ctc/train.sh`:
 
 You can also modify the script or directly use the following command:
 

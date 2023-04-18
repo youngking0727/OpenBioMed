@@ -17,7 +17,7 @@
           "num_layer": 5,
           "drop_ratio": 0.5,
           "feat_dim": 512,
-          "init_checkpoint": "/share/project/biomed/GraphMVP/output/3D_hybrid_03_masking/GEOM_3D_nmol50000_nconf5_nupper1000/CL_1_VAE_1_AM_1/6_51_10_0.1/0.3_EBM_dot_prod_0.05_normalize_l2_detach_target_2_100_0/pretraining_model.pth",
+          "init_checkpoint": "../ckpts/gnn_ckpts/graphmvp/pretraining_model.pth",
           "param_key": ""
       },
       "pred_head": {

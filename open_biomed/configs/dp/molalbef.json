@@ -32,7 +32,7 @@
           "gin_hidden_dim": 300,
           "gin_num_layers": 5,
           "drop_ratio": 0.2,
-          "bert_config_path": "../dair_biomed/configs/mtr/kvplm_bert_config.json",
+          "bert_config_path": "configs/mtr/kvplm_bert_config.json",
           "bert_ckpt": "../ckpts/bert_ckpts/kvplm/ckpt_KV_1.pt",
           "max_n_nodes": 64,
           "projection_dim": 256,

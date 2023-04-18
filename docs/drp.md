@@ -1,5 +1,5 @@
 ##  Drug-Response Prediction
-Drug-response prediction aims at predicting if a drugs is responsive on cells, tissues, or patients, based on the gene expression profile.  
+Drug-response prediction aims at predicting if a drugs is responsive on cells, tissues or patients based on the gene expression profile.  
 
 #### Feature
 
@@ -9,16 +9,16 @@ Drug-response prediction aims at predicting if a drugs is responsive on cells, t
 
 #### Data Preparation
 
-Install GDSC and TCGA [here]() and put them under `datasets/drp/`. Install supplementary data [here]() and put them under `assets/drp/`. Install STRING database (homo sapiens) [here](https://string-db.org/cgi/download) (`9606.protein.info.v11.0.txt`, `9606.protein.links.v11.0.txt` and `9606.protein.sequences.v11.0.fasta`) and put it under `assets/kg/STRING/`.
+Install GDSC and TCGA [here](https://pan.baidu.com/s/19L1sMZBkY_43nrZ9NCZTYg?pwd=jg4y#list/path=%2F) (`password is jg4y`, `GDSC/ and TCGA/`) and put them under `datasets/drp/`. Install supplementary data [here](https://pan.baidu.com/s/19L1sMZBkY_43nrZ9NCZTYg?pwd=jg4y#list/path=%2F) (`password is jg4y`, `drp/`) and put them under `assets/drp/`. Install STRING database (homo sapiens) [here](https://string-db.org/cgi/download) (`9606.protein.info.v11.0.txt`, `9606.protein.links.v11.0.txt` and `9606.protein.sequences.v11.0.fasta`) and put it under `assets/kg/STRING/`.
 
 #### Training and Evaluation
 
-You can run the Bash scripts under `dair_biomed/scripts/mtr/`:
+You can run scripts using bash under `open_biomed/scripts/mtr/`:
 
 ```bash
-dair_biomed/scripts/drp/
-├── train.sh						# train TGDRP on GDSC dataset
-└── transfer.sh             		# train TGDRP on GDSC dataset and zero-shot test on TCGA dataset
+open_biomed/scripts/drp/
+├── train.sh								# train TGDRP on GDSC dataset
+└── transfer.sh             # train TGDRP on GDSC dataset and zero-shot test on TCGA dataset
 ```
 
 You can also modify the scripts or directly use the following command:
