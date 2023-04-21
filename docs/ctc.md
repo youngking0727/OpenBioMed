@@ -8,7 +8,7 @@
 - Supported dataset: Zheng68k.
 - Supproted evaluation: Accuracy and F1 Score.
 
-#### Package Preparation
+#### Additional Packages
 
 To support usage of cell type classification, run the following commands:
 ```
