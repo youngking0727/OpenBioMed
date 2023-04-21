@@ -2,7 +2,7 @@
 
 Drug property prediction (DP) aims to predict molecule properties such as toxicity and side effects, which is a significant task in drug discovery.  
 
-#### Feature
+#### Features
 
 - Supported models: [MolCLR](https://github.com/yuyangw/MolCLR), [MGraphDTA](https://github.com/guaguabujianle/MGraphDTA), [MoMu](https://github.com/ddz16/MoMu) and **DeepEIK**. More models will be implemented and more combinations will be tested in the future.
 - Supported datasets: 8 classification datasets i.e. BBBP, Tox21, ToxCast, SIDER, ClinTox, MUV, HIV and BACE of [MoleculeNet](https://moleculenet.org).
