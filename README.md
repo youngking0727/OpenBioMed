@@ -35,10 +35,8 @@ pip install torch-geometric
 pip install transformers
 pip install ogb
 git clone https://github.com/BioFM/OpenBioMed.git # this repository
-git clone https://github.com/gadsbyfly/PyBioMed.git
-cd PyBioMed
-python setup.py install
-cd ../OpenBioMed
+cd OpenBioMed
+mkdir assets
 mkdir ckpts
 ```
 
@@ -47,6 +45,15 @@ mkdir ckpts
 ## Quick Start
 
 Here, we provide a quick example of training DeepDTA for drug-target interaction prediction on the Davis dataset. For more models, datasets, and tasks, please refer to our [scripts](./open_biomed/scripts) and [documents](./docs).
+
+This quick example requires installation of an additional package:
+```bash
+cd assets
+git clone https://github.com/gadsbyfly/PyBioMed.git
+cd PyBioMed
+python setup.py install
+cd ..
+```
 
 ### Step 1: Data Preparation
 
