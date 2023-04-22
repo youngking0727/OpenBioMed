@@ -1,7 +1,5 @@
 ##  Cell Type Classification
 
-[comment]: Cell type classification aims to predict .
-
 #### Features
 
 - Supported models: ScBERT and CellLM. 
