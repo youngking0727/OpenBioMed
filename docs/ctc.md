@@ -6,7 +6,7 @@
 
 - Supported models: ScBERT and CellLM. 
 - Supported dataset: Zheng68k.
-- Supproted evaluation: Accuracy and F1 Score.
+- Supported evaluation: Accuracy and F1 Score.
 
 #### Additional Packages
 
