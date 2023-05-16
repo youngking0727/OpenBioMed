@@ -11,10 +11,10 @@
                 "name": "TransformerTokenizer",
                 "max_length": 128,
                 "transformer_type": "bert",
-                "model_name_or_path": "../ckpts/bert_ckpts/pubmedbert_uncased"
+                "model_name_or_path": "../ckpts/text_ckpts/pubmedbert_uncased"
             },
             "kg": {
-                "name": "id",
+                "name": "neighbour",
                 "kg_name": "BMKGV2",
                 "kg_path": "../kg_data",
                 "save_path": "../kg_data/kge",
@@ -33,7 +33,7 @@
           "gin_num_layers": 5,
           "drop_ratio": 0.2,
           "bert_config_path": "configs/mtr/kvplm_bert_config.json",
-          "bert_ckpt": "../ckpts/bert_ckpts/kvplm/ckpt_KV_1.pt",
+          "bert_ckpt": "../ckpts/text_ckpts/kvplm/ckpt_KV_1.pt",
           "max_n_nodes": 64,
           "projection_dim": 256,
           "kge": {
@@ -45,10 +45,10 @@
           }
       },
       "pred_head": {
-          "hidden_size": [],
+          "hidden_size": [512, 256],
           "activation": "relu",
-          "batch_norm": false,
-          "dropout": 0.1
+          "batch_norm": true,
+          "dropout": 0.5
       }
   }
 } 
